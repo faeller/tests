@@ -1,0 +1,84 @@
+/* base styling */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5FCC2;
+}
+
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+}
+
+div.container {
+    text-align: center;
+    position: relative;
+}
+
+section.menu-item {
+    background-color: #547980;
+    display: inline-block;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+div.menu-item-title {
+    background-color: #45ADA8;
+    width: 30%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+ p.menu-item-content {
+    padding: 25px;
+}
+
+/*
+
+    Breakpoints:
+
+    Desktop: >= 992px
+    Tablet: > 768px and <= 991px
+    Mobile: <= 767px
+
+*/
+
+@media (max-width: 991px) and (min-width: 768px) {
+    section.menu-item {
+        width: 45%;
+    }
+}
+
+@media (min-width: 992px) {
+    section.menu-item {
+        width: 25%;
+    }
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cabin Regular'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v9/yQOMOX5hR0-6LTD879t-PQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Cabin Sketch';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cabin Sketch Regular'), local('CabinSketch-Regular'), url(https://fonts.gstatic.com/s/cabinsketch/v9/d9fijO34zQajqQvl3YHRCegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
